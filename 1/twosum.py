@@ -5,6 +5,7 @@ class Solution:
 		hashmap = {}
 		for i in range(len(nums)):
 			hashmap[nums[i]] = i
+			#print(hashmap[nums[i]], ":", nums[i])
 		for i in range(len(nums)):
 			complement = target - nums[i]
 			if complement in hashmap and hashmap[complement] != i:
